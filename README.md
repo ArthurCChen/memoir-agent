@@ -26,6 +26,10 @@ repository root, and tell it whether the host is `machine-a` or `machine-b`.
 Claude Code starts from `CLAUDE.md` and follows the corresponding file in
 `worker_tasks/`.
 
+For the initial web-published snapshot, run `python bootstrap_worker.py` once
+after cloning to unpack the versioned worker bundle. A later native Git-tree
+publication may make this step unnecessary; `CLAUDE.md` detects both layouts.
+
 The official-method reproduction matrix and confirmed stock logging boundary
 are documented in `docs/reproducibility/original-methods.md`.
 
